@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: A sample CloudFormation template to create EC2 Instance
+# Resources section
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0a716d3f3b16d290c
+      InstanceType: t3.micro
+      Tags: 
+        - Key: Name
+          Value: CloudFormation-Example
